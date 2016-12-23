@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 8px 0;
+  border-radius: 2px;
+  transition: box-shadow 300ms;
+  overflow: hidden;
+
+  &> span {
+    padding: 0 16px;
+  }
+
+  &__white {
+    background-color: $oc-gray-0;
+    color: $oc-gray-9;
+  }
+
+  &__black {
+    background-color: $oc-gray-9;
+    color: $oc-gray-0;
+  }
+
+  &--full {
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  }
+}

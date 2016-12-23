@@ -1,0 +1,17 @@
+{
+  "name": "dimitri-portfolio",
+  "version": "1.0.0",
+  "description": "A simple portfolio for Dimitri Zitti",
+  "main": "index.js",
+  "repository": {},
+  "author": "alexandre-mouton-brady <amoutonbrady@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "cssnano": "^3.9.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1"
+  }
+}

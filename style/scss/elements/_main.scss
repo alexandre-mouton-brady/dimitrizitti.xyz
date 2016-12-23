@@ -1,0 +1,100 @@
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  padding: 40px 100px 0;
+
+  &__section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 3.2rem;
+    letter-spacing: 10px;
+    font-size: bold;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: $oc-gray-5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+
+  &__heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    position: relative;
+    display: inline-block;
+    background-color: $oc-gray-0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 0;
+      top: 50%;
+      width: 100vw;
+      background-color: $oc-gray-4;
+      z-index: -1;
+    }
+  }
+}
+
+.main-content {
+  margin-bottom: 70px;
+
+  &__item {
+    display: flex;
+    position: relative;
+    padding-left: 32px;
+    padding-bottom: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $oc-gray-4;
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $oc-gray-4;
+      height: 100%;
+      width: 2px;
+      left: 4px;
+      top: 5px;
+    }
+  }
+
+  &--formation {
+    & .left {
+      width: 35%;
+    }
+
+    & .right {
+      width: 65%;
+    }
+  }
+
+  &--experience {
+    & .main-content__item {
+      flex-flow: column nowrap;
+    }
+
+    & .left {
+      margin-bottom: 15px;
+    }
+  }
+}

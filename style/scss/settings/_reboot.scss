@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+aside,
+article,
+section,
+footer {
+  display: block;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+body {
+  position: relative;
+  font-size: 1rem;
+  line-height: inherit;
+  color: $oc-gray-9;
+  background-color: $oc-gray-0;
+  font-family: Arial, Helvetica, sans-serif;
+}

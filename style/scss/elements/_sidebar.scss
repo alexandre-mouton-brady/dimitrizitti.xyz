@@ -1,0 +1,96 @@
+.sidebar {
+  height: 100vh;
+  width: 312px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  right: 0;
+  top: 0;
+  overflow: auto;
+  background-color: $oc-gray-9;
+  color: $oc-gray-0;
+
+  &__profile-picture {
+    margin: 30px auto;
+    height: 100px;
+    width: 100px;
+    background-image: url('../../assets/dimttertiz.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-color: $oc-gray-0;
+  }
+
+  &__section {
+    padding: 0 30px;
+    margin-bottom: 20px;
+
+    &--social {
+      display: flex;
+      justify-content: space-between;
+
+      &> svg {
+        fill: $oc-gray-2;
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+
+  &__heading {
+    font-size: 1.3rem;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 10px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      height: 2px;
+      width: calc((302px - 60px) - 100%);
+      top: 50%;
+      left: calc(100% + 10px);
+      background-color: $oc-gray-0;
+    }
+  }
+
+  &__paragraph {
+    color: $oc-gray-5;
+  }
+}
+
+.skill {
+  margin-bottom: 30px;
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__header {
+    display: block;
+    color: $oc-gray-2;
+  }
+
+  &__progress {
+    display: block;
+    height: 15px;
+    width: 100%;
+    background-color: $oc-gray-5;
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__completed {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    display: block;
+    top: 0;
+    transform: scaleX(0.5);
+    transform-origin: center left;
+    background-color: $oc-blue-6;
+  }
+}
