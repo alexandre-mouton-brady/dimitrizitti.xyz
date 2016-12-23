@@ -2,7 +2,7 @@
 
 I was given the opportunity to craft a portfolio. This is actually for a friend of mine. This README will serve as information for the build path
 
-![website screenshot](https://github.com/alexandre-mouton-brady/dimitrizitti.xyz/tree/master/assets/showcase.png)
+![website screenshot](assets/showcase.png?raw=true)
 
 ## Technologies Used
 *A quick summary of the Technologies I used to craft it*
